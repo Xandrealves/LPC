@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Inscrição - A Chama Não Pode Apagar</title>
+  <style>
+    body {
+      margin: 0; padding: 20px;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to top, #1a2a6c, #0a437a 60%, #ffcc00 95%);
+      color: white;
+    }
+    form {
+      background: rgba(0,0,0,0.4);
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 500px;
+      margin: auto;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 12px;
+      margin-top: 10px;
+      border: none;
+      border-radius: 6px;
+    }
+    input[type="submit"] {
+      background: #ffcc00;
+      color: #0a437a;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+
+  <h1 style="text-align: center;">Inscrição - Conferência Jovem</h1>
+
+  <section id="inscricao">
+    <h2>Inscreva-se</h2>
+    <form action="https://formsubmit.co/seuemail@gmail.com" method="POST">
+      <input type="hidden" name="_captcha" value="false" />
+      <input type="text" name="nome" placeholder="Seu nome completo" required />
+      <input type="email" name="email" placeholder="Seu e-mail" required />
+      <input type="tel" name="telefone" placeholder="Seu WhatsApp" required />
+      <select name="faixa_etaria" required>
+        <option value="">Selecione a faixa etária</option>
+        <option value="Menor de 18">Menor de 18</option>
+        <option value="18 a 25">18 a 25</option>
+        <option value="26 a 35">26 a 35</option>
+        <option value="36 ou mais">36 ou mais</option>
+      </select>
+      <textarea name="mensagem" rows="3" placeholder="Mensagem (opcional)"></textarea>
+      <input type="submit" value="Enviar Inscrição" />
+    </form>
+  </section>
+
+</body>
+</html>
